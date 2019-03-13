@@ -1,5 +1,5 @@
 const express = require('express');
-const port = process.argv[2] || 5000;
+// const port = process.argv[2] || 5000;
 const application = express();
 // const cors = require('cors');
 const wss = require('./additional/websocket');
