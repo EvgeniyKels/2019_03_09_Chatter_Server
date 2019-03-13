@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
+const config = require('config');
 
 class Mongoose {
 
     constructor() {
-        this.dbUsername = 'zenitFZ';  //todo переделать на конфиг
-        this.dbPassword = '12345.com';
-        this.hostnamePort = 'ds211588.mlab.com:11588';
-        this.dbname = 'chatter';
+        this.dbUsername = config.get('db.username');  //todo переделать на конфиг
+        this.dbPassword = config.get('db.password');
+        this.hostnamePort = config.get('db.hostname');
+        this.dbname = config.get('db.name');
         if (this.dbPassword.length === 0 || !this.dbPassword) {
             console.error('password did not set');
             process.exit(1)

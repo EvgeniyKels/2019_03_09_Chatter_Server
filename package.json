@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "bcrypt": "^3.0.4",
+    "config": "^3.0.1",
     "express": "^4.16.4",
     "joi": "^14.3.1",
     "joi-password-complexity": "^2.0.1",

@@ -1,0 +1,9 @@
+{
+  "db" : {
+    "name": "chatter",
+    "hostname": "ds211588.mlab.com:11588",
+    "username": "zenitFZ",
+    "password": ""
+  },
+  "secret" : ""
+}
