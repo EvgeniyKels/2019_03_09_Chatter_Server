@@ -10,5 +10,4 @@ wss(7000);
 application.use(express.json());
 application.use('/users', user);
 
-application.listen(port, () => console.log(`listening port ${port}`));
-
+// application.listen(port, () => console.log(`listening port ${port}`));

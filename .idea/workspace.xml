@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e0873a3-384e-41df-ab28-1de54101ed83" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="6e0873a3-384e-41df-ab28-1de54101ed83" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -339,7 +336,7 @@
       <workItem from="1552370806201" duration="991000" />
       <workItem from="1552417605905" duration="10363000" />
       <workItem from="1552449385164" duration="882000" />
-      <workItem from="1552503913580" duration="9320000" />
+      <workItem from="1552503913580" duration="9820000" />
     </task>
     <task id="LOCAL-00001" summary="oi">
       <created>1552518325392</created>
@@ -369,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552519748667</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="oi">
+      <created>1552520075418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552520075418</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105517000" />
+    <option name="totallyTimeSpent" value="106017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +392,7 @@
     <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16237314" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32668713" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003903" side_tool="true" weight="0.36809817" />
