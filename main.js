@@ -1,0 +1,13 @@
+const express = require('express');
+const port = process.argv[2] || 5000;
+const application = express();
+const cors = require('cors');
+const wss = require('./additional/websocket');
+const user = require('./routs/user');
+wss(5001);
+application.use(cors());
+application.use(express.json());
+application.use('/users', user);
+
+application.listen(port, () => console.log(`listening port ${port}`));
+
