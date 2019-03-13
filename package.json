@@ -17,7 +17,7 @@
     "cors": "^2.8.5"
   },
   "scripts": {
-    "start": "node main.js 5000"
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "",
