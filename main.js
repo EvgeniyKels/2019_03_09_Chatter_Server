@@ -5,7 +5,7 @@ const application = express();
 const wss = require('./additional/websocket');
 const user = require('./routs/user');
 const conf = require('config');
-wss(5001);
+wss(7000);
 // application.use(cors());
 application.use(express.json());
 application.use('/users', user);
