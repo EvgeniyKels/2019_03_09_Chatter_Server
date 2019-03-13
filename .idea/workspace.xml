@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e0873a3-384e-41df-ab28-1de54101ed83" name="Default" comment="" />
+    <list default="true" id="6e0873a3-384e-41df-ab28-1de54101ed83" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +20,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -84,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -140,7 +143,6 @@
         <option value="$PROJECT_DIR$/additional/hasher.js" />
         <option value="$PROJECT_DIR$/const_var.js" />
         <option value="$PROJECT_DIR$/validators/validator.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/default.json" />
         <option value="$PROJECT_DIR$/config/custom-environment-variables.json" />
@@ -149,6 +151,7 @@
         <option value="$PROJECT_DIR$/database.js" />
         <option value="$PROJECT_DIR$/additional/auth.js" />
         <option value="$PROJECT_DIR$/additional/websocket.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/main.js" />
       </list>
     </option>
@@ -336,7 +339,7 @@
       <workItem from="1552370806201" duration="991000" />
       <workItem from="1552417605905" duration="10363000" />
       <workItem from="1552449385164" duration="882000" />
-      <workItem from="1552503913580" duration="9820000" />
+      <workItem from="1552503913580" duration="10372000" />
     </task>
     <task id="LOCAL-00001" summary="oi">
       <created>1552518325392</created>
@@ -373,11 +376,32 @@
       <option name="project" value="LOCAL" />
       <updated>1552520075418</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="oi">
+      <created>1552520617532</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552520617532</updated>
+    </task>
+    <task id="LOCAL-00007" summary="oi">
+      <created>1552520737955</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552520737955</updated>
+    </task>
+    <task id="LOCAL-00008" summary="oi">
+      <created>1552520888128</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552520888128</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106017000" />
+    <option name="totallyTimeSpent" value="106569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,7 +416,7 @@
     <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16237314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237314" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32668713" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003903" side_tool="true" weight="0.36809817" />
@@ -748,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/production.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/additional/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -762,34 +779,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/additional/hasher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/default.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routs/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/additional/websocket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!block;n#sendAdminMsg#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,17 +800,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/production.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/additional/hasher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/additional/websocket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!block;n#sendAdminMsg#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routs/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="210">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
