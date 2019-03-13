@@ -4,7 +4,7 @@ const config = require('config');
 class Mongoose {
 
     constructor() {
-        this.dbUsername = config.get('db.username');  //todo переделать на конфиг
+        this.dbUsername = config.get('db.username');
         this.dbPassword = config.get('db.password');
         this.hostnamePort = config.get('db.hostname');
         this.dbname = config.get('db.name');

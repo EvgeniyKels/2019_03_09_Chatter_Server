@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
-const secret = 'AweCeasar'; //todo должен быть в файлах конфигурации
+const config = require('config');
+const SECRET = config.get('secret');
 
 module.exports.token = function (req, res, next) {
     const token = req.header('x-auth-token');
@@ -7,7 +8,7 @@ module.exports.token = function (req, res, next) {
         res.status(401).send('not authorized user')
     } else {
         try {
-            req.user = jwt.verify(token, secret);
+            req.user = jwt.verify(token, SECRET);
             next();
         } catch (e) {
             res.status(401).send('invalid token')

@@ -5,7 +5,8 @@ const constants = require('../const_var');
 const hash = require('../additional/hasher');
 const auth = require('../additional/auth.js');
 const Database = require('../database');
-const SECRET = "AweCeasar"; //TODO вынести в конфиг или .env
+const config = require('config');
+const SECRET = config.get('secret');
 const database = new Database();
 const UserTab = database.getAuthUserSchema();
 database.connect();

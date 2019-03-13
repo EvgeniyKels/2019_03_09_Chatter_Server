@@ -1,6 +1,7 @@
 const Ws = require('ws').Server;
 const jwt = require('jsonwebtoken');
-const secret = 'AweCeasar';     //todo должен быть в файлах конфигурации
+const config = require('config');
+const SECRET = config.get('secret');
 const onlineUsers = {};
 const Database = require('../database');
 
@@ -63,7 +64,7 @@ function checkJwtKey(jwtKey, socket) {
         return false;
     } else {
         try {
-            return jwt.verify(jwtKey, secret);
+            return jwt.verify(jwtKey, SECRET);
         } catch (e) {
             socket.send(e + " TODO INVALID");
         }
