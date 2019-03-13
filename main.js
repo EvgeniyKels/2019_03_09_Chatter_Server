@@ -11,5 +11,5 @@ application.use(express.json());
 application.use('/users', user);
 
 // application.listen(port, () => console.log(`listening port ${port}`));
-application.listen(process.env.PORT || 5000);
+application.listen(process.env.PORT || 5000, () => console.log(`listening port ${port}`));
 // .listen(process.env.PORT || 5000)
