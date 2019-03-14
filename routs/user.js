@@ -46,10 +46,12 @@ router.post('/signup', async (req, res) => { //sign up
 router.put('/login', async (req, res) => {
     if (validate(req, res, loginSchema)) {
         try {
+            console.log(req.body)
             let user = await UserTab.findOne({name: req.body.name});
             if (!user || !(await hash.compar(req.body.password, user.password))) {
                 res.status(401).send('user is not authorised'); //todo проверить статус
             } else {
+                console.log(res)
                 res.send({
                     jwt: jwt.sign({name: user.name, roles: user.roles, _id: user._id}, SECRET),
                     name: user.name
