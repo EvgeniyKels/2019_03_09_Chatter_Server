@@ -1,6 +1,6 @@
 {
   "db": {
-    "password": "pass",
-    "secret": "secret"
-  }
+    "password": "pass"
+  },
+  "secret": "secret"
 }
