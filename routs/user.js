@@ -50,14 +50,10 @@ router.put('/login', async (req, res) => {
             if (!user || !(await hash.compar(req.body.password, user.password))) {
                 res.status(401).send('user is not authorised'); //todo проверить статус
             } else {
-                console.log(req.body)
-                console.log(SECRET)
-                console.log(jwt.sign({name: user.name, roles: user.roles, _id: user._id}, SECRET))
                 res.send({
                     jwt: jwt.sign({name: user.name, roles: user.roles, _id: user._id}, SECRET),
                     name: user.name
-            })
-                ;//то что мы подписываем
+            });
 
             }
         } catch (e) {

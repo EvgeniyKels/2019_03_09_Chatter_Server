@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0873a3-384e-41df-ab28-1de54101ed83" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routs/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routs/user.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="168">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -46,8 +47,8 @@
       <file leaf-file-name="websocket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/additional/websocket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="110" column="1" selection-end-line="111" selection-end-column="33" />
+            <state relative-caret-position="147">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -55,17 +56,26 @@
       <file leaf-file-name="default.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/default.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="147">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routs/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="54" column="98" selection-start-line="54" selection-start-column="98" selection-end-line="54" selection-end-column="98" />
+            <state relative-caret-position="286">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-environment-variables.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/custom-environment-variables.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -132,13 +142,13 @@
         <option value="$PROJECT_DIR$/validators/validator.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/default.json" />
-        <option value="$PROJECT_DIR$/config/custom-environment-variables.json" />
         <option value="$PROJECT_DIR$/config/production.json" />
         <option value="$PROJECT_DIR$/database.js" />
         <option value="$PROJECT_DIR$/additional/auth.js" />
         <option value="$PROJECT_DIR$/additional/websocket.js" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/custom-environment-variables.json" />
         <option value="$PROJECT_DIR$/routs/user.js" />
       </list>
     </option>
@@ -183,6 +193,16 @@
             <path>
               <item name="2019_03_09_Chatter_Server" type="b2602c69:ProjectViewProjectNode" />
               <item name="2019_03_09_Chatter_Server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2019_03_09_Chatter_Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019_03_09_Chatter_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="additional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2019_03_09_Chatter_Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019_03_09_Chatter_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="2019_03_09_Chatter_Server" type="b2602c69:ProjectViewProjectNode" />
@@ -312,7 +332,7 @@
       <workItem from="1552417605905" duration="10363000" />
       <workItem from="1552449385164" duration="882000" />
       <workItem from="1552503913580" duration="13372000" />
-      <workItem from="1552526448979" duration="340000" />
+      <workItem from="1552526448979" duration="1761000" />
     </task>
     <task id="LOCAL-00001" summary="oi">
       <created>1552518325392</created>
@@ -447,11 +467,32 @@
       <option name="project" value="LOCAL" />
       <updated>1552526661765</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="oi">
+      <created>1552526793121</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1552526793121</updated>
+    </task>
+    <task id="LOCAL-00021" summary="oi">
+      <created>1552526988983</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1552526988983</updated>
+    </task>
+    <task id="LOCAL-00022" summary="oi">
+      <created>1552527279952</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1552527279952</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109909000" />
+    <option name="totallyTimeSpent" value="111330000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,18 +504,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1319" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237314" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32668713" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.32240438" side_tool="true" visible="true" weight="0.3190184" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.32240438" side_tool="true" weight="0.3190184" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3297546" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40490797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6775956" visible="true" weight="0.3190184" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6775956" weight="0.36809817" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46625766" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -796,24 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/custom-environment-variables.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/validators/validator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -831,24 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/production.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/additional/hasher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/additional/websocket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="110" column="1" selection-end-line="111" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -860,17 +873,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/custom-environment-variables.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="29" />
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/production.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routs/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="54" column="98" selection-start-line="54" selection-start-column="98" selection-end-line="54" selection-end-column="98" />
+        <state relative-caret-position="286">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/additional/websocket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
