@@ -5,16 +5,6 @@ const SECRET = config.get('secret');
 const onlineUsers = {};
 const Database = require('../database');
 
-async function sendMessageToDB(message) {
-    const userMongoSchema = Database.prototype.getAuthUserSchema();
-    const userFromDb = await userMongoSchema.findOne({name: message.username});
-    const partnerFromDb = await userMongoSchema.findOne({name: message.companion});
-    userFromDb.messages.push(message);
-    partnerFromDb.messages.push(message);
-    userFromDb.save();
-    partnerFromDb.save();
-}
-
 function webSocketServer(port) {
     const wss = new Ws({port: port});
     console.log(wss.options.port + " onLine");
@@ -70,8 +60,15 @@ function checkJwtKey(jwtKey, socket) {
         }
     }
 }
-
-
+async function sendMessageToDB(message) {
+    const userMongoSchema = Database.prototype.getAuthUserSchema();
+    const userFromDb = await userMongoSchema.findOne({name: message.username});
+    const partnerFromDb = await userMongoSchema.findOne({name: message.companion});
+    userFromDb.messages.push(message);
+    partnerFromDb.messages.push(message);
+    userFromDb.save();
+    partnerFromDb.save();
+}
 async function userListSender(userMongoSchema, wss) {
     const names = Object.keys(onlineUsers);
     const usersFromDB = await userMongoSchema.find().select("name");
@@ -83,7 +80,6 @@ async function userListSender(userMongoSchema, wss) {
         el.send(JSON.stringify(usersFromDB))
     });
 }
-
 async function onConnection(user, socket, wss) {
     onlineUsers[user.name] = socket;
     console.log(user.name + " CONNECTED " + new Date());
@@ -106,15 +102,11 @@ async function sendAdminMsg(message, DB) {
     obj.messages.push(message);
     obj["userlist"] = false;
     socketArray.forEach((el) => el.send(JSON.stringify(obj)));
-
-
     const userMongoSchema = Database.prototype.getAuthUserSchema();
     const usersFromDb = await userMongoSchema.find();
     usersFromDb.forEach((el) => {
         el.messages.push(message);
         el.save();
     });
-    // usersFromDb.save();
 }
-
 module.exports = webSocketServer;

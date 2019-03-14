@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken');
 let router = express.Router();
 const constants = require('../const_var');
 const hash = require('../additional/hasher');
-const auth = require('../additional/auth.js');
 const Database = require('../database');
 const config = require('config');
 const SECRET = config.get('secret');
