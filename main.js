@@ -1,19 +1,30 @@
 const express = require('express');
-// const port = process.argv[2] || 5000;
+const port = process.argv[2] || 5001;
 const application = express();
+const expressWs = require('express-ws')(application);
 const cors = require('cors');
 const wss = require('./additional/websocket');
 const user = require('./routs/user');
 const conf = require('config');
 const helmet = require('helmet');
 // application.listen(port, () => console.log(`listening port ${port}`));
-let newVar = process.env.PORT || 5000;
-wss(7000);
+// let newVar = process.env.PORT || 5000;
+// wss(7000);
+
+// app.ws('/', function(ws, req) {
+//     ws.on('message', function(msg) {
+//         console.log(msg);
+//     });
+//     console.log('socket', req.testing);
+// });
+
 
 application.use(cors());
 application.use(helmet());
 application.use(express.json());
-
+application.ws("/socket", function (ws, req) {
+    wss(ws);
+});
 application.use('/users', user);
-application.listen(newVar, () => console.log(`listening port ${newVar}`));
+application.listen(port, () => console.log(`listening port ${port}`));
 // .listen(process.env.PORT || 5000)
