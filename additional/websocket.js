@@ -5,54 +5,22 @@ const SECRET = config.get('secret');
 const onlineUsers = {};
 const Database = require('../database');
 
-function webSocketServer(socket) {
-    // const wss = new Ws({server: server, path: "/socket"});
-    // console.log(wss.options.port + " onLine");
+function pingger(socket) {
+    if (socket.isAlive === false) {
+        return socket.close();
+    }
+    socket.isAlive = false;
+    socket.ping('', false, true);
+}
 
-    // wss.on("connection", (socket) => {
-    //     const user = checkJwtKey(socket.protocol, socket);
-    //     if (!user) {return socket.close()}
-    //     onConnection(user, socket, wss); //действия при подключении нового пользователя
-    //     socket.on("message", async (msg) => {
-    //         const message = JSON.parse(msg);
-    //         const user = checkJwtKey(message.jwt, socket);
-    //         if (!user){return socket.close()}
-    //         delete message.jwt;
-    //         let roles = user.roles;
-    //         if (!(message.companion) && roles.find((el) => {
-    //             return el === "admin"
-    //         })) {
-    //            sendAdminMsg(message, onlineUsers).catch(() => console.log('no connection'));
-    //             return;
-    //         }
-    //         if (!(message.companion)){
-    //             return
-    //         }
-    //         await sendMessageToDB(message);
-    //         const obj = {"messages":[]};
-    //         obj.messages.push(message);
-    //         obj["userlist"] = false; //todo what happened here, why it add field userlist to message
-    //         const stringMessage = JSON.stringify(obj);
-    //         const socketOnlineUser = onlineUsers[message.companion];
-    //         if (socketOnlineUser) {
-    //             socketOnlineUser.send(stringMessage);
-    //             if (socketOnlineUser === socket) {
-    //                 return
-    //             }
-    //         }
-    //         socket.send(stringMessage);
-    //     });
-    //
-    //     socket.on("close", (socket) => {
-    //         onDisconnection(user, socket, wss);
-    //     })
-    // });
+function webSocketServer(socket) {
 
     const user = checkJwtKey(socket.protocol, socket);
     if (!user) {
         return socket.close()
     }
     onConnection(user, socket); //действия при подключении нового пользователя
+    setInterval(pingger(socket), 50000);
     socket.on("message", async (msg) => {
         const message = JSON.parse(msg);
         const user = checkJwtKey(message.jwt, socket);
