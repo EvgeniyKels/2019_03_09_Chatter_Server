@@ -5,8 +5,10 @@ const application = express();
 const wss = require('./additional/websocket');
 const user = require('./routs/user');
 const conf = require('config');
+const helmet = require('helmet');
 wss(7000);
 // application.use(cors());
+application.use(helmet());
 application.use(express.json());
 application.use('/users', user);
 
