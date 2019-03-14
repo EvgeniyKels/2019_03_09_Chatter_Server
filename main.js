@@ -8,7 +8,7 @@ const conf = require('config');
 const helmet = require('helmet');
 // application.listen(port, () => console.log(`listening port ${port}`));
 let newVar = process.env.PORT || 5000;
-wss(process.env.PORT + 1 || 7000);
+wss(process.env.PORT + "1" || 7000);
 
 application.use(cors());
 application.use(helmet());
