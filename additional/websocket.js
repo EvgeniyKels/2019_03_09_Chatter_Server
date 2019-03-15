@@ -6,12 +6,15 @@ const onlineUsers = {};
 const Database = require('../database');
 
 function pingger(socket) {
-    if (socket.isAlive === false) {
-        return socket.close();
-    }
-    socket.isAlive = false;
-    let ping = socket.ping('', false, true);
-    console.log('bum', ping)
+   while (true) {
+       if (socket.isAlive === false) {
+           return socket.close();
+       }
+       socket.isAlive = false;
+       let ping = socket.ping('', false, true);
+       console.log('bum', ping)
+   }
+
 }
 
 function webSocketServer(socket) {
