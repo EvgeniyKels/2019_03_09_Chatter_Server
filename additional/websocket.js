@@ -21,7 +21,7 @@ function webSocketServer(socket) {
         return socket.close()
     }
     onConnection(user, socket); //действия при подключении нового пользователя
-    setInterval(pingger(socket), 30000);
+    setInterval(pingger(socket), 3000);
     socket.on("message", async (msg) => {
         const message = JSON.parse(msg);
         const user = checkJwtKey(message.jwt, socket);
