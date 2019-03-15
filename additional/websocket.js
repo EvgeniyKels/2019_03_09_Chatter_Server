@@ -93,12 +93,8 @@ async function userListSender(userMongoSchema) {
 
 async function onConnection(user, socket) {
     setInterval(() => {
-        // if (!this.socket) return;
-        // if (this.socket.readyState !== 1) return;
-        // socket.send(JSON.stringify("heartbeat"));
         socket.ping();
-        console.log("СРАЛ Я В ВАШУ КОНСОЛЬ")
-    }, 3000)
+    }, 50000);
     onlineUsers[user.name] = socket;
     console.log(user.name + " CONNECTED " + new Date());
     const userMongoSchema = Database.prototype.getAuthUserSchema();
