@@ -10,7 +10,8 @@ function pingger(socket) {
         return socket.close();
     }
     socket.isAlive = false;
-    socket.ping('', false, true);
+    let ping = socket.ping('', false, true);
+    console.log('bum', ping)
 }
 
 function webSocketServer(socket) {
@@ -20,7 +21,7 @@ function webSocketServer(socket) {
         return socket.close()
     }
     onConnection(user, socket); //действия при подключении нового пользователя
-    setInterval(pingger(socket), 50000);
+    setInterval(pingger(socket), 30000);
     socket.on("message", async (msg) => {
         const message = JSON.parse(msg);
         const user = checkJwtKey(message.jwt, socket);
