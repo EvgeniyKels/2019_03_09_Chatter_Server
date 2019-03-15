@@ -24,7 +24,6 @@ application.use(helmet());
 application.use(express.json());
 application.ws("/socket", function (ws, req) {
     wss.WSS(ws);
-    setInterval(wss.ping(ws), 3000)
 });
 application.use('/users', user);
 // application.listen(port, () => console.log(`listening port ${port}`));

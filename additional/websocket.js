@@ -92,6 +92,13 @@ async function userListSender(userMongoSchema) {
 }
 
 async function onConnection(user, socket) {
+    setInterval(() => {
+        // if (!this.socket) return;
+        // if (this.socket.readyState !== 1) return;
+        // socket.send(JSON.stringify("heartbeat"));
+        socket.ping();
+        console.log("СРАЛ Я В ВАШУ КОНСОЛЬ")
+    }, 3000)
     onlineUsers[user.name] = socket;
     console.log(user.name + " CONNECTED " + new Date());
     const userMongoSchema = Database.prototype.getAuthUserSchema();
@@ -122,12 +129,5 @@ async function sendAdminMsg(message, DB) {
         el.save();
     });
 }
-module.exports.ping = function pingger(socket) {
-    if (socket.isAlive === false) {
-        return socket.terminate();
-    }
-    socket.isAlive = false;
-    let ping = socket.ping(() => {});
-    console.log('bum', ping)
-}
+
 module.exports.WSS = webSocketServer;
