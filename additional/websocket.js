@@ -5,14 +5,7 @@ const SECRET = config.get('secret');
 const onlineUsers = {};
 const Database = require('../database');
 
-function pingger(socket) {
-       if (socket.isAlive === false) {
-           return socket.terminate();
-       }
-       socket.isAlive = false;
-       let ping = socket.ping(() => {});
-       console.log('bum', ping)
-}
+
 
 function webSocketServer(socket) {
 
@@ -21,7 +14,6 @@ function webSocketServer(socket) {
         return socket.close()
     }
     onConnection(user, socket); //действия при подключении нового пользователя
-    setInterval(pingger(socket), 3000);
     socket.on("message", async (msg) => {
         const message = JSON.parse(msg);
         const user = checkJwtKey(message.jwt, socket);
@@ -130,5 +122,12 @@ async function sendAdminMsg(message, DB) {
         el.save();
     });
 }
-
-module.exports = webSocketServer;
+module.exports.ping = function pingger(socket) {
+    if (socket.isAlive === false) {
+        return socket.terminate();
+    }
+    socket.isAlive = false;
+    let ping = socket.ping(() => {});
+    console.log('bum', ping)
+}
+module.exports.WSS = webSocketServer;
